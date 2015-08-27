@@ -9,12 +9,14 @@ def console(string):
 	#convert string to byte string, add arguments. i.e., ACK, packet length, type, hex'string', checksum, ACKD; return packet.
 
 	for bite in packet:
+	#encode bytes to audible freq. function here; return tone
+	#would have to yield at the sample rate of the audio stream.
+	# set sleep to (decimal number of a second) to control going to fast.. going to slow? dont know yet.		
 		transmitter(modem(bite).next())
 
 def modem(bite):
 	tones=[1,2,3,...]
 
-	#encode bytes to audible freq. function here; return tone
 
 	yield tone
 
