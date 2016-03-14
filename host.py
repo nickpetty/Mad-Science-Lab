@@ -8,7 +8,8 @@
 # - Voice Recieve
 # - Audio Send
 
-
+# Everything will have to be on different ports #
+-------------------------------------------------
 def panelRecieve():
 	# listen for web data from panel and pass to serial write 1
 
